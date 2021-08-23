@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 600px;
+  background: linear-gradient(to right, rgb(38, 57, 77), rgb(40, 72, 121));
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.caixa {
+  width: 450px;
+  min-height: 500px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.lista_atividades {
+  margin-top: 10px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 10px;
+  background-color: #247ba0;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.input_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.input {
+  width: 320px;
+  height: 50px;
+  background-color: rgb(216, 215, 215);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.input:hover {
+  transform: translateY(-1px);
+  background-color: rgb(167, 166, 166);
+  transition: 700ms;
+}
+
+.titulo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  font-size: 70px;
+  margin-top: 10px;
+}
+
+.erro {
+  color: red;
+  text-align: center;
+  display: none;
+}
+
+.atividade {
+  width: 350px;
+  background-color: rgb(216, 215, 215);
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.atividade:hover {
+  transform: translateY(-2px);
+  transition: 700ms;
+}
+
+/* Tags */
+
+p {
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+/* Botões */
+
+.botao_adc {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(216, 215, 215);
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.botao_adc:hover {
+  background-color: rgb(167, 166, 166);
+  transition: 700ms;
+  transform: translateY(-1px);
+}
+
+.botao_del {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.botao_del:hover {
+  background-color: rgb(167, 166, 166);
+  transition: 700ms;
+  transform: translateY(-1px);
+}
+
+.botao_del_todos {
+  width: 380px;
+  height: 50px;
+  background-color: rgb(34, 137, 182);
+  border-radius: 10px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  margin-left: 35px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.botao_del_todos:hover {
+  background-color: #247ba0;
+  transition: 700ms;
+  transform: translateY(-1px);
+}
+
+.botao_del {
+  background-color: #13293d;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+  padding: 2px;
+  color: white;
+}
+
+/* Paletas */
+.paletas_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.paleta {
+  width: 30px;
+  height: 30px;
+  margin: 8px;
+  background-color: blue;
+}
+#paleta1,
+#paleta2,
+#paleta3 {
+  border-radius: 50%;
+}
+#paleta1 {
+  background-color: seagreen;
+}
+#paleta1:hover {
+  background-color: rgb(21, 109, 59);
+}
+
+#paleta2 {
+  background-color: slateblue;
+}
+#paleta2:hover {
+  background-color: rgb(87, 70, 196);
+}
+
+#paleta3 {
+  background-color: tomato;
+}
+#paleta3:hover {
+  background-color: rgb(141, 57, 42);
+}
+
+#paleta1:hover,
+#paleta2:hover,
+#paleta3:hover {
+  transform: translateY(-1px);
+  transition: 700ms;
+  cursor: pointer;
+}
